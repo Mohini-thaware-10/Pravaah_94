@@ -1,0 +1,30 @@
+{
+  "name": "pravaah",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app-shell.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mohini-thaware-10/Pravaah_94.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Mohini-thaware-10/Pravaah_94/issues"
+  },
+  "homepage": "https://pravaah94.vercel.app",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.118.0"
+  },
+  "devDependencies": {
+    "vite": "^8.3.5"
+  }
+}

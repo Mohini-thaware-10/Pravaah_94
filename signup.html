@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <title>Create Account - PRAVAAH</title>
+        <meta name="description" content="Create a PRAVAAH account to prepare institutional applications, coordinate reviews, monitor compliance, and manage approval deadlines.">
+        <meta name="robots" content="noindex, nofollow">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="signin.css">
+        <link rel="stylesheet" href="signup.css">
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='8' fill='%2317365D'/><path d='M16 20h32M16 32h20M16 44h28' stroke='%232563EB' stroke-width='4' stroke-linecap='round'/></svg>">
+    </head>
+    <body class="auth-page auth-page--signup">
+        <a class="skip-link" href="#signupForm">Skip to registration form</a>
+
+        <main class="auth-shell">
+            <!-- Brand / product identity -->
+            <section class="auth-brand" aria-labelledby="brandHeadline">
+                <div class="auth-brand__inner">
+                    <a class="auth-brand__logo" href="index.html" aria-label="PRAVAAH home">
+                        <span class="auth-brand__mark" aria-hidden="true">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="40" height="40" rx="7" fill="#17365D"/>
+                                <path d="M10 12h20M10 20h12M10 28h16" stroke="#2563EB" stroke-width="3" stroke-linecap="round"/>
+                                <circle cx="28" cy="20" r="2" fill="#2563EB"/>
+                            </svg>
+                        </span>
+                        <span class="auth-brand__name">PRAVAAH</span>
+                    </a>
+
+                    <p class="auth-brand__tag">AICTE Approval Workflow Platform</p>
+
+                    <h1 class="auth-brand__headline" id="brandHeadline">Every Approval. Every Deadline. One Connected Workflow.</h1>
+
+                    <p class="auth-brand__desc">
+                        Access your workspace to track approval workflows, review application documents,
+                        monitor compliance requirements, and manage important deadlines.
+                    </p>
+
+                    <ol class="auth-flow" aria-label="Approval workflow stages">
+                        <li class="auth-flow__step">
+                            <span class="auth-flow__icon" aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M14 2v6h6" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M12 12v6M9 15h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                            </span>
+                            <span class="auth-flow__label">Application</span>
+                        </li>
+                        <li class="auth-flow__step">
+                            <span class="auth-flow__icon" aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M14 2v6h6" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 15l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                            <span class="auth-flow__label">Document Review</span>
+                        </li>
+                        <li class="auth-flow__step">
+                            <span class="auth-flow__icon" aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3l7 3v5c0 4.4-3 7.4-7 9-4-1.6-7-4.6-7-9V6l7-3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                            <span class="auth-flow__label">Compliance</span>
+                        </li>
+                        <li class="auth-flow__step">
+                            <span class="auth-flow__icon" aria-hidden="true">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M8 12.5l2.5 2.5L16 9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                            <span class="auth-flow__label">Decision</span>
+                        </li>
+                    </ol>
+
+                    <p class="auth-brand__trust">
+                        <span class="auth-brand__trust-icon" aria-hidden="true">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3l7 3v5c0 4.4-3 7.4-7 9-4-1.6-7-4.6-7-9V6l7-3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </span>
+                        Role-based access, verified by your institution&rsquo;s PRAVAAH administrator.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Registration panel -->
+            <section class="auth-panel" aria-label="Create account">
+                <div class="auth-card auth-card--signup">
+                    <noscript>
+                        <div class="auth-notice auth-notice--info" role="note">
+                            <span class="auth-notice__text">JavaScript is required to create a PRAVAAH account.</span>
+                        </div>
+                    </noscript>
+
+                    <div id="signupView">
+                        <header class="auth-card__header">
+                            <h2 class="auth-card__title" id="signupTitle">Create your account</h2>
+                            <p class="auth-card__subtitle">Set up your account to access your PRAVAAH workspace.</p>
+                        </header>
+
+                        <div class="auth-notice" id="formNotice" role="status" aria-live="polite" hidden>
+                            <span class="auth-notice__icon" aria-hidden="true">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 8h.01M11 12h1v4h1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                            <span class="auth-notice__text" id="formNoticeText"></span>
+                        </div>
+
+                        <form class="auth-form" id="signupForm" novalidate tabindex="-1">
+                            <fieldset class="role-group" id="roleGroup" aria-describedby="roleNote roleError">
+                                <legend class="field__label role-group__legend">I want to register as</legend>
+
+                                <div class="role-options">
+                                    <label class="role-card" for="roleInstitution">
+                                        <input class="role-card__input" type="radio" name="role" id="roleInstitution" value="authorized_official" required>
+                                        <span class="role-card__icon" aria-hidden="true">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 21h18M5 21V8.5L12 4l7 4.5V21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 21v-5.5h6V21M9 10h.01M15 10h.01M9 13h.01M15 13h.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                                        </span>
+                                        <span class="role-card__body">
+                                            <span class="role-card__title">Authorized Official</span>
+                                            <span class="role-card__desc">Institution representative. Prepare and submit applications for your institution.</span>
+                                        </span>
+                                        <span class="role-card__check" aria-hidden="true">
+                                            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        </span>
+                                    </label>
+
+                                    <label class="role-card" for="roleOfficer">
+                                        <input class="role-card__input" type="radio" name="role" id="roleOfficer" value="compliance_reviewer" required>
+                                        <span class="role-card__icon" aria-hidden="true">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3l7 3v5c0 4.4-3 7.4-7 9-4-1.6-7-4.6-7-9V6l7-3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        </span>
+                                        <span class="role-card__body">
+                                            <span class="role-card__title">Compliance Reviewer</span>
+                                            <span class="role-card__desc">Government or institutional officer. Review, monitor, and coordinate approvals across institutions.</span>
+                                        </span>
+                                        <span class="role-card__check" aria-hidden="true">
+                                            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        </span>
+                                    </label>
+                                </div>
+
+                                <p class="role-note" id="roleNote">
+                                    <span class="role-note__icon" aria-hidden="true">
+                                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3l7 3v5c0 4.4-3 7.4-7 9-4-1.6-7-4.6-7-9V6l7-3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </span>
+                                    Selecting a role does not grant access. <strong>Authorized Official</strong> and <strong>Compliance Reviewer</strong> requests are verified by a PRAVAAH administrator. Administrator and read-only roles are assigned by invitation.
+                                </p>
+
+                                <p class="field__error role-group__error" id="roleError" role="alert"></p>
+                            </fieldset>
+
+                            <div class="field">
+                                <label class="field__label" for="fullName">Full name</label>
+                                <input
+                                    class="field__input"
+                                    id="fullName"
+                                    name="fullName"
+                                    type="text"
+                                    autocomplete="name"
+                                    placeholder="e. Meera Singh"
+                                    maxlength="120"
+                                    aria-required="true"
+                                    aria-describedby="fullNameError"
+                                    required
+                                >
+                                <p class="field__error" id="fullNameError" role="alert"></p>
+                            </div>
+
+                            <div class="field">
+                                <label class="field__label" for="email">Official email address</label>
+                                <input
+                                    class="field__input"
+                                    id="email"
+                                    name="email"
+                                    type="email"
+                                    inputmode="email"
+                                    autocomplete="email"
+                                    placeholder="you@organization.com"
+                                    maxlength="254"
+                                    spellcheck="false"
+                                    autocapitalize="none"
+                                    aria-required="true"
+                                    aria-describedby="emailError"
+                                    required
+                                >
+                                <p class="field__error" id="emailError" role="alert"></p>
+                            </div>
+
+                            <div class="field">
+                                <label class="field__label" id="organizationLabel" for="organization">Organization / Institution</label>
+                                <input
+                                    class="field__input"
+                                    id="organization"
+                                    name="organization"
+                                    type="text"
+                                    autocomplete="organization"
+                                    placeholder="e.g. Your institution or department"
+                                    maxlength="160"
+                                    aria-required="true"
+                                    aria-describedby="organizationError"
+                                    required
+                                >
+                                <p class="field__error" id="organizationError" role="alert"></p>
+                            </div>
+
+                            <div class="signup-extra" id="institutionFields" hidden>
+                                <div class="field">
+                                    <label class="field__label" for="institutionType">Institution type</label>
+                                    <select
+                                        class="field__input field__select"
+                                        id="institutionType"
+                                        name="institutionType"
+                                        autocomplete="off"
+                                        aria-required="true"
+                                        aria-describedby="institutionTypeError"
+                                        disabled
+                                    >
+                                        <option value="">Select institution type</option>
+                                        <option value="Engineering College">Engineering College</option>
+                                        <option value="Technical Institution">Technical Institution</option>
+                                        <option value="Polytechnic">Polytechnic</option>
+                                    </select>
+                                    <p class="field__error" id="institutionTypeError" role="alert"></p>
+                                </div>
+                            </div>
+
+                            <div class="signup-extra" id="officerFields" hidden>
+                                <div class="field">
+                                    <label class="field__label" for="department">Department / Office</label>
+                                    <input
+                                        class="field__input"
+                                        id="department"
+                                        name="department"
+                                        type="text"
+                                        autocomplete="off"
+                                        placeholder="e.g. Department of Technical Education"
+                                        maxlength="120"
+                                        aria-required="true"
+                                        aria-describedby="departmentError"
+                                        disabled
+                                    >
+                                    <p class="field__error" id="departmentError" role="alert"></p>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="field__label" for="password">Create password</label>
+                                <div class="password-control">
+                                    <input
+                                        class="field__input field__input--password"
+                                        id="password"
+                                        name="password"
+                                        type="password"
+                                        autocomplete="new-password"
+                                        placeholder="Create a strong password"
+                                        minlength="8"
+                                        maxlength="128"
+                                        aria-required="true"
+                                        aria-describedby="passwordHelp passwordError"
+                                        required
+                                    >
+                                    <button type="button" class="password-toggle" id="togglePassword" aria-label="Show password" aria-pressed="false" aria-controls="password">
+                                        <svg class="icon-eye" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 12s3.5-6.5 10-6.5S22 12 22 12s-3.5 6.5-10 6.5S2 12 2 12z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="12" cy="12" r="2.75" stroke="currentColor" stroke-width="1.5"/></svg>
+                                        <svg class="icon-eye-off" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" hidden><path d="M3 3l18 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M10.6 6.1A10.4 10.4 0 0 1 12 6c6.5 0 10 6 10 6a17.4 17.4 0 0 1-3.2 3.9M6.2 7.8C3.6 9.5 2 12 2 12s3.5 6 10 6a10 10 0 0 0 4.1-.85" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.9 9.9a3 3 0 0 0 4.2 4.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                                    </button>
+                                </div>
+
+                                <div class="field__help" id="passwordHelp">
+                                    <p class="field__help-title">Password requirements</p>
+                                    <ul class="pw-req" id="pwReq">
+                                        <li class="pw-req__item" data-req="length">
+                                            <span class="pw-req__mark" aria-hidden="true"></span>
+                                            At least 8 characters
+                                        </li>
+                                        <li class="pw-req__item" data-req="mix">
+                                            <span class="pw-req__mark" aria-hidden="true"></span>
+                                            Contains a letter and a number
+                                        </li>
+                                    </ul>
+                                    <div class="pw-strength" id="pwStrength" hidden>
+                                        <span class="pw-strength__bar"><span class="pw-strength__fill" id="pwStrengthFill"></span></span>
+                                        <span class="pw-strength__label" id="pwStrengthLabel">Password strength: Weak</span>
+                                    </div>
+                                </div>
+
+                                <p class="field__error" id="passwordError" role="alert"></p>
+                            </div>
+
+                            <div class="field">
+                                <label class="field__label" for="confirmPassword">Confirm password</label>
+                                <div class="password-control">
+                                    <input
+                                        class="field__input field__input--password"
+                                        id="confirmPassword"
+                                        name="confirmPassword"
+                                        type="password"
+                                        autocomplete="new-password"
+                                        placeholder="Re-enter your password"
+                                        minlength="8"
+                                        maxlength="128"
+                                        aria-required="true"
+                                        aria-describedby="confirmPasswordError"
+                                        required
+                                    >
+                                    <button type="button" class="password-toggle" id="toggleConfirmPassword" aria-label="Show password" aria-pressed="false" aria-controls="confirmPassword">
+                                        <svg class="icon-eye" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 12s3.5-6.5 10-6.5S22 12 22 12s-3.5 6.5-10 6.5S2 12 2 12z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="12" cy="12" r="2.75" stroke="currentColor" stroke-width="1.5"/></svg>
+                                        <svg class="icon-eye-off" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" hidden><path d="M3 3l18 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M10.6 6.1A10.4 10.4 0 0 1 12 6c6.5 0 10 6 10 6a17.4 17.4 0 0 1-3.2 3.9M6.2 7.8C3.6 9.5 2 12 2 12s3.5 6 10 6a10 10 0 0 0 4.1-.85" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.9 9.9a3 3 0 0 0 4.2 4.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                                    </button>
+                                </div>
+                                <p class="field__error" id="confirmPasswordError" role="alert"></p>
+                            </div>
+
+                            <div class="form-error" id="formError" role="alert" hidden>
+                                <span class="form-error__icon" aria-hidden="true">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 8v5M12 16h.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                                </span>
+                                <span id="formErrorText"></span>
+                            </div>
+
+                            <button type="submit" class="btn-primary" id="signupBtn">
+                                <span class="spinner"></span>
+                                <span class="btn-primary__label" id="signupBtnLabel">Create account</span>
+                            </button>
+                        </form>
+
+                        <p class="auth-alt">Already have an account? <a class="link-inline" href="signin.html">Sign in</a></p>
+                    </div>
+
+                    <!-- Registration result -->
+                    <div id="resultView" hidden>
+                        <div class="auth-result">
+                            <span class="auth-result__icon" id="resultIconSuccess" aria-hidden="true" hidden>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M8 12.5l2.5 2.5L16 9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                            <span class="auth-result__icon" id="resultIconMail" aria-hidden="true" hidden>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M3.5 7l8.5 6 8.5-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+
+                            <h2 class="auth-card__title auth-result__title" id="resultTitle" tabindex="-1">Account created</h2>
+                            <p class="auth-result__text" id="resultText"></p>
+
+                            <div class="auth-notice" id="resendNotice" role="status" aria-live="polite" hidden>
+                                <span class="auth-notice__icon" aria-hidden="true">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 8h.01M11 12h1v4h1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </span>
+                                <span class="auth-notice__text" id="resendNoticeText"></span>
+                            </div>
+
+                            <button type="button" class="btn-secondary" id="resendBtn" hidden>
+                                <span class="spinner"></span>
+                                <span id="resendBtnLabel">Resend verification email</span>
+                            </button>
+
+                            <a class="btn-primary" id="resultSignin" href="signin.html">Continue to sign in</a>
+
+                            <p class="auth-result__note">Authorized Official and Compliance Reviewer access remains subject to verification by a PRAVAAH administrator.</p>
+                        </div>
+                    </div>
+
+                    <p class="auth-support">Need help creating an account? Contact your institution&rsquo;s PRAVAAH administrator.</p>
+                </div>
+            </section>
+        </main>
+
+        <script src="signup.js"></script>
+    </body>
+</html>
